@@ -94,7 +94,7 @@ db:
 Luego de iniciar los contenedores lo abrimos en browser y seguimos los pasos para descargar Localsettings y los copiamos a (nombre de conternedor):/var/www/html
 
 ### Pruebas Medíawiki ⚙️
-![alt text](./imagenes/img_mediawiki.PNG"Mediawiki")
+![alt text](./imagenes/img_mediawiki.PNG "Mediawiki")
 ---
 
 ## 4.Adminer🔧
@@ -115,7 +115,7 @@ environment:
 MYSQL_ROOT_PASSWORD: 123456
 
 ### Pruebas Adminer ⚙️
-![alt text](./imagenes/img_adminer.PNG"Adminer")
+![alt text](./imagenes/img_adminer.PNG "Adminer")
 ---
 
 ## 5.Guestbook🔧
@@ -133,5 +133,5 @@ image: redis
 restart: always
 
 ### Pruebas Guestbook ⚙️
-![alt text](./imagenes/img_guestbook.PNG"Guestbook")
+![alt text](./imagenes/img_guestbook.PNG "Guestbook")
 ---
