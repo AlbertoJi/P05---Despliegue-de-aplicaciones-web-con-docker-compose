@@ -1,0 +1,26 @@
+version: '3'
+services:
+  mediawiki:
+    image: mediawiki
+    container_name: miawiki
+    restart: always
+    ports:
+      - 8080:80
+    links:
+      - database
+    volumes:
+      - images:/var/www/html/images
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: miwiki
+      MYSQL_USER: alberto
+      MYSQL_PASSWORD: 123456
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  images:
+  db:
